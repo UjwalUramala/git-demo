@@ -1,0 +1,16 @@
+   81  git add .
+   82  git commit -m "Second commit"
+   83  git push origin main
+   84  code .\n
+   85  code .\n
+   86  code .\n
+   87  git pull origin main\n
+   88  git log --oneline\n
+   89  git revert ee4bd6e --no-edit
+   90  git push origin main
+   91  echo "Testing git reset" >> README.md
+   92  git add README.md
+   93  git commit -m "Commit before git reset"
+   94  git reset --soft HEAD~1
+   95  git commit -m "Demonstrate git reset --soft HEAD~1"
+   96  git push origin main
